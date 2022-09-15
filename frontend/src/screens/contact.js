@@ -10,7 +10,7 @@ class ContactUsScreen extends Component {
           <title>ContactUsScreen </title>
         </Helmet>
         <div className="ContactUsScreen">
-          <div className="Title">ContactUsScreen</div>
+          <div className="Title">Contact Us Screen</div>
         </div>
       </React.Fragment>
     );

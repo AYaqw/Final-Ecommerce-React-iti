@@ -6,7 +6,9 @@ class FooterComponent extends Component {
     return (
       <React.Fragment>
         <div className="FooterComponent">
-          <div className="Title">Footer Component</div>
+          <p className="text-center fw-semibold fs-3">
+            Create By <span>AyA</span> |All Rights Reserved <span>2022</span>
+          </p>
         </div>
       </React.Fragment>
     );

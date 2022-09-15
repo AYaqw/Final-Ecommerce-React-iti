@@ -1,42 +1,49 @@
 import React, { Component } from 'react';
-import CategoriesComponent from './components/categories';
 import FooterComponent from './components/footer';
-import LoadingComponent from './components/loading';
 import NavbarComponent from './components/navbar';
-import ProductComponent from './components/product';
-import RatingComponents from './components/rating';
-import SliderComponent from './components/slider';
-import AboutScreen from './screens/about';
-import CartScreen from './screens/cart';
-import CategoriesProductsScreen from './screens/categoriesProducts';
-import ContactUsScreen from './screens/contact';
-import HomeScreen from './screens/home';
-import NotFoundScreen from './screens/notFound';
-import ProductDetailsScreen from './screens/productDetails';
+import { Route, BrowserRouter, Routes } from 'react-router-dom';
 
+// - Basics Screen
+import HomeScreen from './screens/home';
+import AboutScreen from './screens/about';
+import ContactUsScreen from './screens/contact';
+import CartScreen from './screens/cart';
+
+// - Sup Screen
+import CategoriesComponent from './components/categories';
+import CategoriesProductsScreen from './screens/categoriesProducts';
+import ProductDetailsScreen from './screens/productDetails';
+// import NotFoundScreen from './screens/notFound';
 class App extends Component {
   state = {};
   render() {
     return (
-      <React.Fragment>
-        <div className="App m-5">
-          <div className="Title">App</div>
-          <CategoriesComponent />
-          <FooterComponent />
-          <LoadingComponent />
+      <BrowserRouter>
+        <div className="App d-flex flex-column site">
           <NavbarComponent />
-          <ProductComponent />
-          <RatingComponents />
-          <SliderComponent />
-          <AboutScreen />
-          <CartScreen />
-          <CategoriesProductsScreen />
-          <ContactUsScreen />
-          <HomeScreen />
-          <NotFoundScreen />
-          <ProductDetailsScreen />
+          <main className="container">
+            <Routes>
+              {/* ! Basis Pages */}
+              <Route path="/" exact element={<HomeScreen />} />
+              <Route path="/home" element={<HomeScreen />} />
+              <Route path="/about" element={<AboutScreen />} />
+              <Route path="/contact" element={<ContactUsScreen />} />
+              <Route path="/cart" element={<CartScreen />} />
+              {/* <Route path="/Not" element={<NotFoundScreen />} /> */}
+              {/* ! Sup Pages */}
+              <Route path="/categories" element={<CategoriesComponent />} />
+              <Route
+                path="/categories/:id"
+                element={<CategoriesProductsScreen />}
+              />
+              <Route path="/Products/:id" element={<ProductDetailsScreen />} />
+              {/* ! not found page */}
+              {/* <Redirect to="/" /> */}
+            </Routes>
+          </main>
+          <FooterComponent />
         </div>
-      </React.Fragment>
+      </BrowserRouter>
     );
   }
 }

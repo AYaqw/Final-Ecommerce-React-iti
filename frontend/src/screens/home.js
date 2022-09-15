@@ -11,6 +11,7 @@ class HomeScreen extends Component {
         </Helmet>
         <div className="HomeScreen">
           <div className="Title">Home Screen</div>
+          l;mf ;fx fkx
         </div>
       </React.Fragment>
     );
