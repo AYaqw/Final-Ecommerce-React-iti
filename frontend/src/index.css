@@ -28,7 +28,7 @@ code {
 }
 
 .Title {
-    text-align: center;
+    /* text-align: center; */
     color: var(--darkblue);
     font-size: 40px;
     font-weight: bolder;

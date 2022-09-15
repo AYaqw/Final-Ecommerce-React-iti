@@ -20,6 +20,16 @@
 <li>react-router-dom
 <li>react-helmet-async
 <ul></li>
+<li> <b> Add backend package + components folder + screen floder + Edit readme</b><ul>
+<li>express
+<li>nodemon
+</ul>
 </ol>
 
-<div align="center"><img src="https://user-images.githubusercontent.com/87585934/190393659-70fc75f0-6c5c-4084-ba30-b40032a82d48.jpg" alt="react Hi.........." width="500px"></div>
+<div align="center"><img src="https://user-images.githubusercontent.com/87585934/190414975-00000144-bd8a-439f-9578-391a4a21c0c0.jpg" alt="components, screens" width="500px"></div>
+    
+ <div align="center">
+    <img src="https://user-images.githubusercontent.com/87585934/190415426-4354b50a-6632-436a-a1b7-7c5ec74af7a4.jpg" alt="products data" width="440px"> 
+    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+    <img src="https://user-images.githubusercontent.com/87585934/190415437-e79f2d52-16d9-4ccd-bb52-eefc6eda2a58.jpg" alt="catagories data" width="400px"> 
+</div>
