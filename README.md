@@ -9,4 +9,17 @@
 <ol>
 <li> <b> Add readme + Add git + Add gitHub</b>
 <li> <b> Add frontend + Add backend</b>
+<li> <b> Add frontend package + import in index.js + font + port</b> <ul>
+<li>Bootstrap
+<li>fontawesome
+<li>nodemon
+<li>axios
+<li>formik 
+<li>swiper
+<li>joi-browser
+<li>react-router-dom
+<li>react-helmet-async
+<ul></li>
 </ol>
+
+<div align="center"><img src="https://user-images.githubusercontent.com/87585934/190393659-70fc75f0-6c5c-4084-ba30-b40032a82d48.jpg" alt="react Hi.........." width="500px"></div>

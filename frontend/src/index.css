@@ -1,13 +1,39 @@
+/* #ff4c23  #003754 #79D70F*/
+
+
+/* #EF5B0C  #003865 #3CCF4E */
+
+
+/*   #656565 #65dc89*/
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: 'Hubballi', cursive;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: 'Hubballi', cursive;
+}
+
+:root {
+    --darkblue: #003754;
+    --orange: #ff4c23;
+    --green: #79d70f;
+}
+
+.root {
+    height: 500px !important;
+}
+
+.Title {
+    text-align: center;
+    color: var(--darkblue);
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.Title:hover {
+    color: var(--orange);
 }
