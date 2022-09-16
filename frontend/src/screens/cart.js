@@ -42,30 +42,45 @@ function CartScreen() {
   // ! return
   return (
     <>
-      <div>
+      <div className="CartScreen">
         <Helmet>
           <title>Shopping Cart</title>
         </Helmet>
-        <h1 className="SectionTitle mt-5 mb-5">Shopping Cart</h1>
+
+        <div className="d-flex justify-content-between align-items-center">
+          <Link to="/" className="mybtn size">
+            Back to Home
+          </Link>
+          <div className="Title">Shopping Cart</div>
+        </div>
+
         <div className="row">
-          <div className="col-md-8">
+          <div className="col-md-9">
             {' '}
             {cartItems.length === 0 ? (
-              <div className="alert-secondary">
-                Cart is empty. <Link to="/">Go Shopping</Link>
+              <div className="alert-info fs-2 fw-bolder darkBlue text-center mt-5">
+                Cart is empty.{' '}
+                <Link to="/" className="text-decoration-none ">
+                  Go Shopping
+                </Link>
               </div>
             ) : (
               <ul className="list-group list-group-flush">
-                {cartItems.map((item) => (
-                  <li className="list-group-item" key={`${item.name}cart`}>
+                {cartItems.map((item, index) => (
+                  <li className="list-group-item" key={`${index}cart`}>
                     <div className="align-items-center row">
                       <div className="col-sm-4">
                         <img
                           src={item.filename}
                           alt={item.name}
-                          className="img-fluid rounded img-thumbnail w-25 m-3"
+                          className="img-fluid rounded img-thumbnail w-50 m-3"
                         ></img>
-                        <Link to={`/product/${item.title}`}>{item.title}</Link>
+                        <Link
+                          to={`/product/${item.title}`}
+                          className="text-decoration-none fs-5 fw-bolder darkBlue"
+                        >
+                          {item.title}{' '}
+                        </Link>
                       </div>
                       <div className="col-sm-3 col-6 d-flex">
                         <div
@@ -78,7 +93,9 @@ function CartScreen() {
                         >
                           <i className="fas fa-minus-circle"></i>
                         </div>
-                        <span>{item.quantity}</span>
+                        <span className="fs-5 fw-bolder orang mt-2">
+                          {item.quantity}
+                        </span>
                         <div
                           className="btn btn-success btn-sm m-2"
                           variant="light"
@@ -90,7 +107,9 @@ function CartScreen() {
                           <i className="fas fa-plus-circle"></i>
                         </div>
                       </div>
-                      <div className="col-sm-3 col-3">${item.price}</div>
+                      <div className="col-sm-3 col-3 fs-5 fw-bolder darkBlue">
+                        ${item.price}
+                      </div>
                       <div className="col-sm-2 col-3">
                         <div
                           className="btn btn-danger"
@@ -106,19 +125,27 @@ function CartScreen() {
               </ul>
             )}
           </div>
-          <div className="col-md-4 col-sm-12">
+          <div className="col-md-3 col-sm-12 ">
             <div className="card">
               <div className="card-body">
                 <ul className="list-group list-group-flush" variant="flush">
-                  <li className="list-group-item">
-                    <h3>
-                      subtotal:: (
-                      {cartItems.reduce((a, c) => parseInt(a + c.quantity), 0)})
-                      items : ${' '}
-                      {cartItems.reduce(
-                        (a, c) => parseInt(a + c.price * c.quantity),
-                        0
-                      )}{' '}
+                  <li className="list-group-item checkout">
+                    <h3 className="fw-bold fs-3">
+                      Total Price :: (
+                      <span>
+                        {cartItems.reduce(
+                          (a, c) => parseInt(a + c.quantity),
+                          0
+                        )}
+                      </span>
+                      ) Items : ${' '}
+                      <span>
+                        {' '}
+                        {cartItems.reduce(
+                          (a, c) => parseInt(a + c.price * c.quantity),
+                          0
+                        )}
+                      </span>
                     </h3>
                   </li>
                   <li className="list-group-item">
