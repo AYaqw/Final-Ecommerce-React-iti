@@ -164,6 +164,30 @@ code {
 /*! XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
 
+/* ! ............................................................................................................................. */
+
+
+/* ! ............................................................................................................................. */
+
+
+/*? --------------- *Navbat* ---------------- */
+
+
+/* {
+    position: fixed;
+    z-index: 10;
+    background: antiquewhite;
+    width: 100vw;
+    margin-bottom: 91px !important;
+} */
+
+
+/* ! ............................................................................................................................. */
+
+
+/* ! ............................................................................................................................. */
+
+
 /*? --------------- *About* ---------------- */
 
 .About .Programme .infoAbout {
@@ -186,9 +210,20 @@ code {
 }
 
 .About .Programme li:hover .iconAbout i {
-    color: #65dc89 !important;
-    transform: scale(1.5);
-    transition: 0.6s;
+    color: var(--orange) !important;
+    transform: scale(2);
+    transition: 0.7s;
+}
+
+.About .Programme i,
+.About .Servies i {
+    color: var(--darkblue);
+}
+
+.About .Programme h3,
+.About .Servies h3,
+.About .team h6 {
+    color: var(--orange);
 }
 
 .About .Servies .servies i {
