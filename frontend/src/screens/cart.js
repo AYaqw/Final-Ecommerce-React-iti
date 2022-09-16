@@ -49,7 +49,7 @@ function CartScreen() {
 
         <div className="d-flex justify-content-between align-items-center">
           <Link to="/" className="mybtn size">
-            Back to Home
+            <i class="fa-solid fa-arrow-left"></i> Back
           </Link>
           <div className="Title">Shopping Cart</div>
         </div>
@@ -157,7 +157,8 @@ function CartScreen() {
                         onClick={checkoutHandler}
                         disabled={cartItems.length === 0}
                       >
-                        Proceed to checkout
+                        Proceed to checkout{' '}
+                        <i class="fa-solid fa-money-check"></i>
                       </div>
                     </div>
                   </li>

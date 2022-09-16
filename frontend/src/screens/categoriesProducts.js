@@ -80,7 +80,7 @@ function CategoriesProductsScreen() {
       <div className="CategoriesProductsScreen">
         <div className="d-flex justify-content-between align-items-center">
           <Link to="/" className="mybtn size">
-            Back to Home
+            <i class="fa-solid fa-arrow-left"></i> Back
           </Link>
           <div className="Title">Categories Products Screen</div>
         </div>
@@ -112,6 +112,7 @@ function CategoriesProductsScreen() {
                     value="0"
                     id="firstRadioR5"
                     onChange={(e) => setFilterRate(e.target.value)}
+                    defaultChecked
                   />
                   <label
                     className="form-check-label d-flex justify-content-between fs-5 fw-bold"
@@ -201,6 +202,7 @@ function CategoriesProductsScreen() {
                     name="listGroupRadioPrice"
                     value="r4"
                     id="fourthRadioP5"
+                    defaultChecked
                     onChange={(e) => setFilterPrice(e.target.value)}
                   />
                   <label
@@ -217,7 +219,6 @@ function CategoriesProductsScreen() {
                     name="listGroupRadioPrice"
                     value="r0"
                     id="firstRadioP1"
-                    defaultChecked
                     onChange={(e) => setFilterPrice(e.target.value)}
                   />
                   <label
