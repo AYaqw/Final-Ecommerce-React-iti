@@ -33,10 +33,13 @@ class App extends Component {
               {/* ! Sup Pages */}
               <Route path="/categories" element={<CategoriesComponent />} />
               <Route
-                path="/categories/:id"
+                path="/Categories/category/:id"
                 element={<CategoriesProductsScreen />}
               />
-              <Route path="/Products/:id" element={<ProductDetailsScreen />} />
+              <Route
+                path="/Products/product/:id"
+                element={<ProductDetailsScreen />}
+              />
               {/* ! not found page */}
               {/* <Redirect to="/" /> */}
             </Routes>

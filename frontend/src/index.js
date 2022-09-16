@@ -10,14 +10,17 @@ import '../node_modules/bootstrap/dist/js/bootstrap.js';
 
 import './index.css';
 import { HelmetProvider } from 'react-helmet-async';
+import { StoreProvider } from './Store';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  // <React.StrictMode>
+  <StoreProvider>
     <HelmetProvider>
       <App />
     </HelmetProvider>
-  </React.StrictMode>
+  </StoreProvider>
+  // </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -25,7 +25,5 @@
 <li>nodemon
 </ul>
 <li> <b> Add Routs + Add Navbar + Edit readme</b>
+<li> <b> Fetch data</b>
 </ol>
-
-<div align="center"><img src="https://user-images.githubusercontent.com/87585934/190447076-f749e1a3-08a0-460e-9d39-069ca404974e.jpg" alt="home page 1, screens" width="800px"></div>
-    

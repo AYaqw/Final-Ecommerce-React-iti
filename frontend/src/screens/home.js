@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import { Helmet } from 'react-helmet-async';
+// import SliderComponent from '../components/slider';
+import CategoriesComponent from './../components/categories';
+import OfferProducts from './../components/offerProducts';
 
 class HomeScreen extends Component {
   state = {};
@@ -10,8 +13,11 @@ class HomeScreen extends Component {
           <title>Home Screen </title>
         </Helmet>
         <div className="HomeScreen">
-          <div className="Title">Home Screen</div>
-          l;mf ;fx fkx
+          {/* <SliderComponent /> */}
+          <div className="Title">Our Catogories</div>
+          <CategoriesComponent />
+          <div className="Title">Our Offer Products</div>
+          <OfferProducts />
         </div>
       </React.Fragment>
     );

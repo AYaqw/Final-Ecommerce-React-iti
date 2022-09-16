@@ -21,6 +21,16 @@ app.get(`/api/Products/product/:product`, (req, res) => {
     //! else not Found page
 });
 
+app.get(`/api/Categories/category/:category`, (req, res) => {
+    const category = Data.categories.find(
+        (x) => x.section === req.params.category
+    );
+    if (category) {
+        res.send(category);
+    }
+    //! else not Found page
+});
+
 //ToDo:: * 3
 const port = process.env.PORT || 5050;
 

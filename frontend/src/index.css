@@ -34,6 +34,17 @@ code {
     color: var(--orange);
 }
 
+.mybtn {
+    background-color: var(--orange);
+    color: #fff;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.mybtn:hover {
+    background-color: #f93f15;
+}
+
 
 /* ! ............................................................................................................................. */
 
@@ -96,3 +107,104 @@ code {
 
 
 /*? ------------------+ 3- Home +------------------------  */
+
+
+/*?? ---+ 3.1- Home(Swiper) +--- */
+
+.CategoriesComponent .mySwiper .category {
+    overflow: hidden;
+    width: 150px !important;
+}
+
+.CategoriesComponent .mySwiper .category img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    /* box-shadow: 0 0 10px rgb(0, 0, 0, 22%); */
+    border-radius: 50%;
+    width: 150px !important;
+    height: 150px;
+    position: relative;
+}
+
+.CategoriesComponent .mySwiper .category:hover .categoryName {
+    /* transform: scale(1.2); */
+    overflow: hidden;
+}
+
+.CategoriesComponent .mySwiper .category .categoryName {
+    width: 100%;
+    height: 100%;
+    background-color: #00375494;
+    position: absolute;
+    top: 0%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--orange);
+    font-weight: bolder;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+
+/*! XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+
+/*? --------------- *About* ---------------- */
+
+.About .Programme .infoAbout {
+    flex: 0 0 80%;
+}
+
+.About .Programme .iconAbout {
+    flex: 0 0 20%;
+}
+
+.About .Programme li,
+.About .team li,
+.About .Servies li {
+    list-style: none;
+}
+
+.About .Programme li:hover {
+    box-shadow: 0 0 10px rgb(0, 0, 0, 12%);
+    border-radius: 10px;
+}
+
+.About .Programme li:hover .iconAbout i {
+    color: #65dc89 !important;
+    transform: scale(1.5);
+    transition: 0.6s;
+}
+
+.About .Servies .servies i {
+    flex: 0 0 15%;
+}
+
+.About .Servies .servies div {
+    flex: 0 0 85%;
+}
+
+.About .team img {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    transition: 0.6s;
+}
+
+.About .team img:hover {
+    transform: scale(0.9);
+}
+
+
+/*? --------------- *Contact Us* ---------------- */
+
+.textarea {
+    height: 200px !important;
+}
