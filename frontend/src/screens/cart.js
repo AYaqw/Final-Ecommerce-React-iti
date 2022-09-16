@@ -124,7 +124,7 @@ function CartScreen() {
                   <li className="list-group-item">
                     <div className="d-grid">
                       <div
-                        className="btn btn-warning"
+                        className="mybtn"
                         type="button"
                         variant="primary"
                         onClick={checkoutHandler}

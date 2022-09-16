@@ -27,4 +27,6 @@
 <li> <b> Add Routs + Add Navbar + Edit readme</b>
 <li> <b> Fetch data</b>
 <li> <b> Design Contact page</b>
+<li> <b> Design About page</b>
+<li> <b> Design Home page</b>
 </ol>

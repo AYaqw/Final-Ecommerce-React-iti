@@ -59,59 +59,53 @@ function ProductDetailsScreen() {
 
             {/* //! review XXXXXXX */}
           </div>
-          <div className="col-lg-3 col-md-6">
+          <div className="col-lg-3 col-md-6 col-sm-12">
             <div className="p-3">
-              <h4 className="text-success">{Product.title}</h4>
+              <h4 className="fs-2  fw-bolder">{Product.title}</h4>
               <ul className="list-group list-group-flush">
-                <li className="list-group-item fw-bolder">
-                  <span className="">type::</span>
-                  <span className="float-end text-warning">{Product.type}</span>
+                <li className="list-group-item fs-4 fw-bold">
+                  <span className="infoTitle">type ::</span>
+                  <span className="float-end ">{Product.type}</span>
                 </li>
-                <li className="list-group-item fw-bolder">
-                  <span className="">price::</span>
-                  <span className="float-end text-warning">
-                    $ {Product.price}
-                  </span>
+                <li className="list-group-item fs-4 fw-bold">
+                  <span className="infoTitle">price ::</span>
+                  <span className="float-end ">$ {Product.price}</span>
                 </li>
-                <li className="list-group-item fw-bolder">
-                  <span>offer::</span>
-                  <span className="float-end text-warning">
-                    % {Product.offer}
-                  </span>
+                <li className="list-group-item fs-4 fw-bold">
+                  <span>offer ::</span>
+                  <span className="float-end ">% {Product.offer}</span>
                 </li>
-                <li className="list-group-item fw-bolder">
-                  <span className="">rating::</span>
-                  <span className="float-end text-warning">
-                    {Product.rating}
-                  </span>
+                <li className="list-group-item fs-4 fw-bold">
+                  <span className="infoTitle">rating ::</span>
+                  <span className="float-end ">{Product.rating}</span>
                 </li>
-                <li className="list-group-item fw-bolder">
-                  <span className="">description::</span>
-                  <span className="">{Product.description}</span>
+                <li className="list-group-item fs-4 fw-bold">
+                  <span className="infoTitle">description ::</span>
+                  <span className="float-end ">{Product.description}</span>
                 </li>
               </ul>
             </div>
           </div>
-          <div className="col-lg-3 col-md-6">
+          <div className="col-lg-3 col-md-6 col-sm-12">
             <div className="card p-3">
-              <h4 className="text-success">Seller</h4>
+              <h4 className="fs-2  fw-bolder">Seller</h4>
               <ul className="list-group list-group-flush">
-                <li className="list-group-item fw-bolder">
-                  <span className="">price After seller::</span>
-                  <span className="float-end text-warning">
+                <li className="list-group-item fs-4 fw-bold">
+                  <span className="infoTitle">price After selling ::</span>
+                  <span className="float-end ">
                     $
                     {parseInt(
                       Product.price - Product.price * (Product.offer / 100)
                     )}
                   </span>
                 </li>
-                <li className="list-group-item fw-bolder">
-                  <span className="">Status::</span>
-                  <span className="float-end text-warning">{Product.type}</span>
+                <li className="list-group-item fs-4 fw-bold">
+                  <span className="infoTitle">Status ::</span>
+                  <span className="float-end ">{Product.type}</span>
                 </li>
                 <button
                   type="button"
-                  className="btn btn-success"
+                  className="mybtn mt-3"
                   onClick={() => addToCartHandler(Product)}
                 >
                   Add to card

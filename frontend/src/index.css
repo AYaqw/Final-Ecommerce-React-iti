@@ -179,6 +179,24 @@ code {
 /* ! ............................................................................................................................. */
 
 
+/*? ------------------+ 2- ProductDetailsScreen +------------------------  */
+
+.ProductDetailsScreen .infoTitle,
+.ProductDetailsScreen h4 {
+    color: var(--darkblue);
+}
+
+.ProductDetailsScreen .float-end {
+    color: var(--orange);
+}
+
+
+/* ! ............................................................................................................................. */
+
+
+/* ! ............................................................................................................................. */
+
+
 /*? --------------- *Categories Products* ---------------- */
 
 .CategoriesProducts .filterData .filterRate .filterTitle,
@@ -201,7 +219,7 @@ code {
 
 .productCard {
     box-shadow: 0 0 10px rgb(0, 0, 0, 7%);
-    transition: 0.3;
+    transition: 0.6;
 }
 
 .productCard .card-body h5 {
