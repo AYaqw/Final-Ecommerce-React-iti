@@ -63,7 +63,7 @@ function ProductComponent(props) {
             <Link
               to="#"
               onClick={() => addToCartHandler(props.product)}
-              className="btn btn-primary"
+              className="mybtn"
             >
               Add to card
             </Link>

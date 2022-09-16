@@ -28,6 +28,7 @@ code {
     color: var(--darkblue);
     font-size: 40px;
     font-weight: bolder;
+    margin-bottom: 2rem;
 }
 
 .Title:hover {
@@ -39,10 +40,17 @@ code {
     color: #fff;
     font-size: 20px;
     font-weight: bolder;
+    padding: 10px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 22%);
 }
 
 .mybtn:hover {
     background-color: #f93f15;
+    color: #fff;
 }
 
 
@@ -203,8 +211,46 @@ code {
 }
 
 
-/*? --------------- *Contact Us* ---------------- */
+/* ! ............................................................................................................................. */
 
-.textarea {
+
+/* ! ............................................................................................................................. */
+
+
+/*? ------------------+ 1- Contact Us +------------------------  */
+
+.ContactUsScreen {
+    padding: 10px;
+}
+
+.ContactUsScreen .form-control {
+    color: var(--darkblue) !important;
+    font-weight: 700 !important;
+}
+
+.ContactUsScreen .textarea {
     height: 200px !important;
+}
+
+.ContactUsScreen ::placeholder {
+    color: var(--darkblue);
+    font-weight: 700;
+}
+
+.form-control:focus {
+    border-color: var(--orange) !important;
+    border-width: 2px;
+    box-shadow: none;
+    border-left-width: thick;
+    /* 0 0 0 0.25rem rgb(0, 55, 84, 25%) !important; */
+    /* rgb(13 110 253 / 25%); */
+}
+
+.ContactUsScreen .modal .Modeltitle {
+    color: var(--orange);
+}
+
+.ContactUsScreen .modal .Modelcontant {
+    color: var(--darkblue);
+    text-align: center;
 }
