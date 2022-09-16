@@ -28,7 +28,7 @@ function OfferProducts() {
           return (
             // <div key={offerProduct.title}></div>
             <div
-              className="ProductComponent col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center"
+              className="ProductComponent col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center"
               key={`${index}ProductComponent`}
             >
               <ProductComponent product={offerProduct} />

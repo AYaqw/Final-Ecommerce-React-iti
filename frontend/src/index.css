@@ -45,12 +45,20 @@ code {
     text-decoration: none;
     border: none;
     outline: none;
-    box-shadow: 0 0 10px rgb(0, 0, 0, 22%);
+    box-shadow: 0 0 10px rgb(0, 0, 0, 12%);
 }
 
 .mybtn:hover {
     background-color: #f93f15;
     color: #fff;
+}
+
+.mybtn.size {
+    height: fit-content !important;
+}
+
+.rating i {
+    font-size: small;
 }
 
 
@@ -132,7 +140,7 @@ code {
     align-items: center;
     justify-content: center;
     color: #fff;
-    /* box-shadow: 0 0 10px rgb(0, 0, 0, 22%); */
+    box-shadow: 0 0 10px rgb(0, 0, 0, 12%);
     border-radius: 50%;
     width: 150px !important;
     height: 150px;
@@ -147,7 +155,7 @@ code {
 .CategoriesComponent .mySwiper .category .categoryName {
     width: 100%;
     height: 100%;
-    background-color: #00375494;
+    background-color: #0037547a;
     position: absolute;
     top: 0%;
     border-radius: 50%;
@@ -158,6 +166,7 @@ code {
     font-weight: bolder;
     text-decoration: none;
     overflow: hidden;
+    text-align: center;
 }
 
 
@@ -170,15 +179,64 @@ code {
 /* ! ............................................................................................................................. */
 
 
+/*? --------------- *Categories Products* ---------------- */
+
+.CategoriesProducts .filterData .filterRate .filterTitle,
+.CategoriesProducts .filterData .filterPrice .filterTitle {
+    color: var(--darkblue);
+}
+
+
+/* ! ............................................................................................................................. */
+
+
+/* ! ............................................................................................................................. */
+
+
+/*? --------------- *Product* ---------------- */
+
+.productCard .badge {
+    background-color: red;
+}
+
+.productCard {
+    box-shadow: 0 0 10px rgb(0, 0, 0, 7%);
+    transition: 0.3;
+}
+
+.productCard .card-body h5 {
+    color: var(--darkblue);
+}
+
+.productCard:hover img {
+    transform: scale(0.9);
+}
+
+.productCard:hover {
+    box-shadow: 0 0 10px rgb(0, 0, 0, 15%);
+}
+
+
+/* ! ............................................................................................................................. */
+
+
+/* ! ............................................................................................................................. */
+
+
 /*? --------------- *Navbat* ---------------- */
 
 
-/* {
+/* .NavbarComponent .navbar
+{
     position: fixed;
     z-index: 10;
     background: antiquewhite;
     width: 100vw;
     margin-bottom: 91px !important;
+}
+
+.App .container{
+    margin-top: 91px;
 } */
 
 

@@ -15,6 +15,7 @@ function NavbarComponent() {
                 src="
                 https://img.freepik.com/free-vector/detailed-click-collect-sign_23-2148779338.jpg
                 "
+                // "../../public/click___collect-removebg-preview.png"
                 alt="Logo"
               />
             </Link>

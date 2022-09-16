@@ -29,7 +29,7 @@ function ProductComponent(props) {
     <React.Fragment>
       <>
         <Link
-          className="card p-3 text-decoration-none"
+          className="card productCard p-3 text-decoration-none"
           style={{ width: '18rem' }}
           to={`/Products/product/${props.product.title}`}
         >
@@ -38,27 +38,29 @@ function ProductComponent(props) {
             className="card-img-top w-100"
             alt="..."
           />
-          <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger p-2 fw-bolder ">
+          <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill  p-2 fw-bolder ">
             % {props.product.offer}
           </span>
-          <div className="card-body">
+          <div className="card-body text-center">
             <h5
-              className="card-title text-secondary"
+              className="card-title fw-bolder fs-3"
               style={{ textDecoration: 'none !important' }}
             >
               {props.product.title}
             </h5>
             <RatingComponents rating={props.product.rating} />
-            <h4 className="text-success">
+
+            <h5 className="fw-bolder fs-3 mb-4">
               $
               {parseInt(
                 props.product.price -
                   props.product.price * (props.product.offer / 100)
               )}
-              <span className="text-secondary text-decoration-line-through fs-6 m-1">
+              <span className="text-danger text-decoration-line-through fs-6 m-1">
                 ${props.product.price}
               </span>
-            </h4>
+            </h5>
+
             {/* <p className="card-text">{fProudect.description}</p> */}
             <Link
               to="#"
